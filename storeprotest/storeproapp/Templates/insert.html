@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="col-12">
+        <div class="card">
+            <!-- /.card-header -->
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data" action="/insertdata">
+                    {% csrf_token %}
+                    <div class="tablebg1">
+                        <div class="row">
+                            <div class="col-sm-1 col-lg-2">Empid</span></div>
+                            <div class="col-sm-3 col-lg-4 mar">
+                                <input type="text" class="form-control" name="txtempid" id="txtempid"
+                                    required placeholder="">
+                            </div>
+
+                            <div class="col-sm-1 col-lg-2">Emp name</span></div>
+                            <div class="col-sm-3 col-lg-4 mar">
+                                <input type="text" class="form-control" name="txtempname" id="txtempname" required
+                                    placeholder="">
+                            </div>
+                            <div class="col-sm-1 col-lg-2">Emp mail</span></div>
+                            <div class="col-sm-3 col-lg-4 mar">
+                                <input type="text" class="form-control" name="txtempmail" id="txtempmail" required
+                                    placeholder="">
+                            </div>
+                            <div class="col-sm-1 col-lg-2">Emp Contact</span></div>
+                            <div class="col-sm-3 col-lg-4 mar">
+                                <input type="text" class="form-control" name="txtempcont" id="txtempcont" required
+                                    placeholder="">
+                            </div>
+                            <div class="form-group pl-3 pt-3">
+                                <button id="btnSignIn" type="submit" class="btn btn-danger btn-block" tabindex="3"><i
+                                        class="fas fa-sign-in-alt"></i>&nbsp;Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
